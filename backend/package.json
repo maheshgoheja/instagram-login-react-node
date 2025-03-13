@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Login with Instagram and display profile details.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "instagram-login-react-node"
+  },
+  "keywords": [
+    "instagram",
+    "login",
+    "react",
+    "node"
+  ],
+  "author": "Mahesh Goheja",
+  "license": "MIT License",
+  "dependencies": {
+    "axios": "^1.8.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}

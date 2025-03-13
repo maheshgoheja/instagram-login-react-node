@@ -1,0 +1,225 @@
+/* src/App.css */
+
+.app-container {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Landing Page Styles */
+.landing-page {
+  text-align: center;
+  max-width: 600px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.landing-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.landing-header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.landing-main {
+  margin-bottom: 30px;
+}
+
+.login-button {
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #405DE6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #304CB3;
+}
+
+.landing-footer {
+  color: #888;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+/* Profile Page Styles */
+.profile-page {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  border: 2px solid #ddd;
+}
+
+.profile-details {
+  text-align: left;
+}
+
+.profile-details p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.conversations-section {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.fetch-conversations-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.fetch-conversations-button:hover {
+  background-color: #0056b3;
+}
+
+.conversations-list h3 {
+  color: #333;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.conversations-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.conversation-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.conversation-item p {
+  margin: 5px 0;
+  color: #666;
+  text-align: left;
+}
+
+.messages-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.messages-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.message-item {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.message-item p {
+  margin: 3px 0;
+  text-align: left;
+}
+
+.message-time {
+  font-size: 0.85em;
+  color: #777;
+  text-align: right;
+}
+
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Responsive Design (Basic Example) */
+@media (max-width: 768px) {
+  .landing-page, .profile-page {
+      padding: 20px;
+  }
+
+  .landing-header h1 {
+      font-size: 1.8em;
+  }
+
+  .login-button {
+      font-size: 16px;
+  }
+
+  .profile-card {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .profile-image {
+      margin-right: 0;
+      margin-bottom: 15px;
+      width: 100px;
+      height: 100px;
+  }
+
+  .profile-details {
+      text-align: center;
+  }
+
+  .fetch-conversations-button {
+      font-size: 14px;
+  }
+
+  .conversations-list h3 {
+      font-size: 1.2em;
+  }
+}
